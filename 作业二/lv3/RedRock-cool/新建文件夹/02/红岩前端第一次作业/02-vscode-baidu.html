@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* loge up part */
+        #head {
+            height: 10%;
+            min-height: 60px;
+            min-width: 1250px;
+            background-color: none;
+        }
+
+        #head-left {
+            height: 60px;
+            width: 553.67px;
+            float: left;
+            padding-left: 24px;
+            background-color: white;
+        }
+
+        #head-left>a {
+            margin: 19px 24px 0px 0px;
+            display: inline-block;
+            font: 13px/23px Arial, sans-serif;
+            color: #222222;
+            text-decoration: yellow;
+            float: left;
+        }
+
+        #head-left a:hover {
+            color: #4e6ef2;
+        }
+
+        #head-right {
+            height: 60px;
+            width: 162px;
+            float: right;
+            background-color: none;
+        }
+
+        #body {
+            position: relative;
+            position: relative;
+            height: 80%;
+            min-height: 462px;
+            width: 658px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: none;
+        }
+
+        #body img {
+            height: 129px;
+            width: 270px;
+            margin-top: -19px;
+            margin-bottom: 11px;
+        }
+
+        /* search part */
+        #search {
+            position: absolute;
+            top: 130.91px;
+            height: 44px;
+            background-color: none;
+        }
+
+        #search-input {
+            height: 44px;
+            width: 550px;
+            float: left;
+            background-color: white;
+        }
+
+        #search-input input {
+            border: 2px solid #c4c7ce;
+            height: 16px;
+            width: 443px;
+            padding: 12px 87px 12px 16px;
+            border-radius: 10px 0 0 10px;
+            border-right-color: #4e6ef2;
+            font-size: 16px;
+        }
+
+        #search-input input:hover {
+            border-color: #a7aab5;
+            border-right-color: #4e6ef2;
+        }
+
+        #search-input input:focus {
+            outline: none;
+            border-color: #4e6ef2;
+        }
+
+        #search-button {
+            height: 44px;
+            width: 108px;
+            float: left;
+            background-color: #4e6ef2;
+        }
+
+        #search-button input {
+            height: 44px;
+            width: 108px;
+            border: 0;
+            border-radius: 10px 10px 10px 10px;
+            background-color: #4e6ef2;
+            font-size: 17px;
+            color: #FFFFFF;
+        }
+
+        #search-button input:hover {
+            background-color: #4662b9;
+        }
+
+        #QRcode {
+            position: absolute;
+            top: 322px;
+            left: 259px;
+            width: 140px;
+            height: 140px;
+            background-image: url(41DC1A70C1B8CD3E4F5017318B068E0A.png);
+            background-repeat: no-repeat;
+
+        }
+
+        #foot {
+            position: relative;
+            margin-top: 6px;
+            text-align: center;
+            font-size: 16px;
+            color: #999999;
+        }
+
+        #foot-downloadAPP {
+            color: #333333;
+            font-size: 20px;
+        }
+
+        #foot-1 {
+            color: #999;
+            font-size: 18px;
+            line-height: 14 px;
+            font-weight: 300;
+        }
+
+        #foot-2 {
+            position: absolute;
+            top: 63px;
+            left: 470.18px;
+            height: 60px;
+            width: 570.67px;
+            text-align: center;
+            padding-left: 26px;
+            background-color: white;
+        }
+
+        #foot-2>a {
+            margin: 23px 28px 0px 0px;
+            display: inline-block;
+            font: 13px/23px Arial, sans-serif;
+            color: #999;
+            text-decoration: #333333;
+        }
+
+        #foot-3 {
+            position: absolute;
+            top: 105px;
+            left: 450.18px;
+            height: 55px;
+            width: 570.67px;
+            text-align: center;
+            padding-left: 26px;
+            background-color: white;
+        }
+
+        #foot-3>a {
+            margin: 23px 28px 0px 0px;
+            display: inline-block;
+            font: 13px/23px Arial, sans-serif;
+            color: #999;
+            text-decoration: #333333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <!-- 上面左边超链接部分 -->
+        <div id="head-left">
+            <a href="https://news.baidu.com/" target="_blank">新闻</a>
+            <a href="https://www.hao123.com/?src=from_pc_logon" target="_blank">hao123</a>
+            <a href="https://map.baidu.com/@11859320,3432468,13z" target="_blank">地图</a>
+            <a href="https://tieba.baidu.com/index.html" target="_blank">贴吧</a>
+            <a href="https://haokan.baidu.com/?sfrom=baidu-top target=" _blank">视频</a>
+            <a href="https://image.baidu.com/" target="_blank">图片</a>
+            <a href="https://pan.baidu.com/disk/main?from=1026962h&_at_=1730481861097#/index?category=all"
+                target="_blank">网盘</a>
+            <a href="https://wenku.baidu.com/?fr=bdpcindex&_wkts_=1730481904289" target="_blank">文库</a>
+            <a href="https://chat.baidu.com/search?isShowHello=1&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22home_tab%22%7D"
+                target="_blank">AI助手</a>
+            <a href="https://www.baidu.com/more/" target="_blank">更多</a>
+        </div>
+        <div id="head-right"></div>
+    </div>
+    <!-- 以下是logo、输入框、二维码部分 -->
+    <div id="body">
+        <img src="PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="">
+        <form action=" ">
+            <div id="search"> </div>
+            <div id="search-input"><input type="text"></div>
+            <div id="search-button"><input type="submit" value="百度一下" /></div>
+            <div id="QRcode">
+                <!-- <img src="41DC1A70C1B8CD3E4F5017318B068E0A.png" alt=""> -->
+            </div>
+        </form>
+    </div>
+    <!-- 下面文字部分 -->
+    <div id="foot">
+        <div id="foot-downloadAPP">下载百度APP</div>
+        <div id="foot-1">有事搜一搜，没事看一看</div>
+        <div id="foot-2">
+            <a href="#" target="_blank">把百度作为首页</a>
+            <a href="https://home.baidu.com/" target="_blank">关于百度</a>
+            <a href="https://ir.baidu.com/" target="_blank">About Baidu</a>
+            <a href="https://e.baidu.com/?refer=1271" target="_blank">企业推广</a>
+        </div>
+        <div id="foot-3">2019_Baidu<a href="#" target="_blank">使用百度前必读</a><a href="#"
+                target="_blank">意见反馈</a>****证*********号KC制作__hhhhhhh号</div>
+    </div>
+
+
+</body>
+
+</html>
