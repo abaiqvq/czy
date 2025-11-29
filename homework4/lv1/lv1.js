@@ -19,7 +19,25 @@ function Person(){
 let obj3 = new Person()
 
 // 构架复制函数
-let copy = function(insertobj) {
+let copy1 = function(insertobj) {
+    let newobj = {};
+    for(let k in insertobj)
+    {
+        newobj[k] = insertobj[k];
+    }
+    return newobj;
+}
+
+function copy2(insertobj) {
+    let newobj = {};
+    for(let k in insertobj)
+    {
+        newobj[k] = insertobj[k];
+    }
+    return newobj;
+}
+
+let copy3 = (insertobj) => {
     let newobj = {};
     for(let k in insertobj)
     {
@@ -29,9 +47,9 @@ let copy = function(insertobj) {
 }
 
 // 进行复制
-let newobj1 = copy(obj1);
-let newobj2 = copy(obj2);
-let newobj3 = copy(obj3);
+let newobj1 = copy1(obj1);
+let newobj2 = copy2(obj2);
+let newobj3 = copy3(obj3);
 
 // 创建数组并存入
 let arr = [];
