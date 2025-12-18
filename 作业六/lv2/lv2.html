@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .textarea {
+            width: 500px;
+            height: 50px;
+            transition: all 0.5s;
+        }
+
+        .writeBox {
+            width: 600px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        /* 头像 */
+        img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 1px;
+        }
+
+        .button {
+            margin-left: 10px;
+            /* height: 100px; */
+        }
+
+        textarea:focus {
+            height: 80px;
+        }
+        .total {
+            margin-right: 50px;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+        /* 评论显示区 */
+        .bottomBox {
+            position: relative;
+            display: flex;
+            width: 100vw;
+            height: 100px;
+            opacity: 0;
+            transition: all 0.1s;
+        }
+        .deleteBox {
+            position: absolute;
+            border: 1px solid black;
+            opacity: 0;
+            left: 0px;
+            transform: all 0.1s;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="topBox">
+
+        <div class="writeBox">
+            <img src="../../photo/ha1.png" alt="">
+            <textarea class="textarea"></textarea>
+            <button class="button">发布</button>
+        </div>
+
+        <div class="writeBox">
+            <span class="total">0/200</span>
+        </div>
+
+        <div class="bottomBox">
+            <img src="../../photo/ha1.png" alt="">
+            <div class="displayBox">
+                你好
+            </div>
+            <div class="deleteBox">
+                删除
+            </div>
+        </div>
+    </div>
+    <script src="./lv2.js"></script>
+</body>
+</html>
